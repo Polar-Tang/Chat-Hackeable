@@ -1,0 +1,89 @@
+.bodyMessage {
+    background-color: rgb(209, 223, 212) ;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr; 
+    gap: 1px;
+    grid-template-rows: 50px 75px 50px;
+    grid-template-areas: 
+    " autor . . "
+    "message message message"
+    " . fecha recibe" ;
+}
+
+.padree{
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.yo{
+    width: 25%;
+    margin-left: auto;
+    height: 25%;
+
+}
+
+.foto-portada{
+    width: 30px;
+}
+
+#root{
+    width: 100%;
+}
+
+.projimo{
+    width: 25%;
+    height: 25%;
+    justify-content: flex-start;
+}
+
+body{
+    display: flex;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.bodyMessage p:first-child{
+    grid-area: autor;
+}
+
+.bodyMessage p:nth-child(2){
+    grid-area: message;
+}
+
+.bodyMessage p:nth-child(3){
+    grid-area: fecha;
+    margin-left: auto;
+}
+
+/* PARA HABILITAR EL SCROLL
+over-flor-y: scroll */
+
+.bodyMessage p:nth-child(4){
+    grid-area: recibe;
+}
+
+.superior-nav{
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagen{
+    width: 200px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
